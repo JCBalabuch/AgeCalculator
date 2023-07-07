@@ -83,3 +83,30 @@ p {
     color: var(--ac-quaternary);
     font-weight: 400;
 }
+
+footer {
+    border-top: 1px solid var(--mb-secondary);
+    width: 100%;
+    height: 8vh;
+    display:flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+    padding-right: 20px;
+  }
+  
+  footer > a > img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  footer > p {
+    color: var(--mb-main);
+    font-style: italic;
+    font-size: 14px;
+  }
+  
+  footer > img {
+    width: 35px;
+    height: 35px;
+  }

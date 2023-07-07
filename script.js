@@ -86,3 +86,40 @@ const displayResult = (bDate, bMonth, bYear) => {
 };
 
 document.getElementById("calc-age-btn").addEventListener("click", ageCalculate);
+
+const Footer = () => {
+
+  const FOOTER$$ = document.querySelector("#footer")
+
+  const lnkIn = document.createElement("a");
+  lnkIn.href = "https://www.linkedin.com/in/jenifferbalabuch/";
+  lnkIn.target = "blank";
+  const lnkInImg = document.createElement("img");
+  lnkInImg.src = "./assets/LinkedInLogo.png";
+  lnkInImg.alt = "LinkedIn Logo";
+  lnkIn.appendChild(lnkInImg);
+
+  const gitHub = document.createElement("a");
+  gitHub.href = "https://github.com/JCBalabuch";
+  gitHub.target = "blank";
+  const gitHubImg = document.createElement("img");
+  gitHubImg.src = "./assets/GitHubLogo.png";
+  gitHubImg.alt = "Github Logo";
+  gitHub.appendChild(gitHubImg);
+
+  const paragraph = document.createElement("p");
+  paragraph.textContent = "Created by Jeniffer Balabuch";
+
+  const jcbs = document.createElement("img");
+  jcbs.src = "./assets/LogoJCBS.png";
+  jcbs.alt = "Personal Logo";
+
+  FOOTER$$.appendChild(lnkIn);
+  FOOTER$$.appendChild(gitHub);
+  FOOTER$$.appendChild(paragraph);
+  FOOTER$$.appendChild(jcbs);
+
+  // document.body.appendChild(FOOTER$$);
+};
+
+Footer()
