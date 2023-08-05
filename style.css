@@ -14,6 +14,23 @@ body {
     color: var(--ac-quaternary);
 }
 
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+header > img {
+    width: auto;
+    height: 100px;
+}
+
+main {
+    width: auto;
+    height: 70vh;
+}
+
 .container {
     width: min(60%, 28.12em);
     position: absolute;
@@ -85,11 +102,10 @@ p {
 }
 
 footer {
-    border-top: 1px solid var(--mb-secondary);
     width: 100%;
-    height: 8vh;
+    height: 10vh;
     display:flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     gap: 10px;
     padding-right: 20px;

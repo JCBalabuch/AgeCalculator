@@ -89,7 +89,7 @@ document.getElementById("calc-age-btn").addEventListener("click", ageCalculate);
 
 const Footer = () => {
 
-  const FOOTER$$ = document.querySelector("#footer")
+  const FOOTER$$ = document.querySelector("footer")
 
   const lnkIn = document.createElement("a");
   lnkIn.href = "https://www.linkedin.com/in/jenifferbalabuch/";
@@ -108,7 +108,7 @@ const Footer = () => {
   gitHub.appendChild(gitHubImg);
 
   const paragraph = document.createElement("p");
-  paragraph.textContent = "Created by Jeniffer Balabuch";
+  paragraph.textContent = "Created by Jeniffer Balabuch - 2023";
 
   const jcbs = document.createElement("img");
   jcbs.src = "./assets/LogoJCBS.png";
@@ -119,7 +119,6 @@ const Footer = () => {
   FOOTER$$.appendChild(paragraph);
   FOOTER$$.appendChild(jcbs);
 
-  // document.body.appendChild(FOOTER$$);
 };
 
 Footer()
